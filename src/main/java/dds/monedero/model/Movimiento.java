@@ -16,7 +16,7 @@ public class Movimiento {
     this.esDeposito = esDeposito;
   }
 
-  public double getMonto() {
+  public Double getMonto() {
     return monto;
   }
 
@@ -34,7 +34,7 @@ public class Movimiento {
     cuenta.agregarMovimiento(fecha, monto, esDeposito);
   }
 
-  public double calcularValor(Cuenta cuenta) {
+  public Double calcularValor(Cuenta cuenta) {
     if (esDeposito) {
       return cuenta.getSaldo() + getMonto();
     } else {
